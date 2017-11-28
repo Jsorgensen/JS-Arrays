@@ -116,7 +116,11 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 */
 
   //Code Here
-
+var removeItem = (arr, val) => arr.filter(item => item !== val);
+var addItem = (arr, val) => {
+  arr.push(val);
+  return arr;
+}
 //removeItem(myGroceryList, 'chips') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //addItem(myGroceryList, 'Jerky') --> ['pizza', 'hotpockets', 'MtnDew', 'corndogs', 'Jerky'];
 
@@ -129,7 +133,13 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 //Write a function called maker that creates an array, fills that array with numbers from 1 to 215, then returns the array.
 
   //Code Here
+var maker = () => {
+  var arr = [];
+  for(var i=0; i<215; i++)
+    arr.push(i+1);
 
+  return arr;
+}
 
 
 //Next Problem
