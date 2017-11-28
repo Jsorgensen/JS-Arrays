@@ -183,7 +183,7 @@ Example: var arr1 = [1,2,3,4]; var arr2 = [2,4,5,6]; newArray // [2,4]
 */
 
   //Code Here
-
+var both = (arr1, arr2) => arr1.filter(item => arr2.indexOf(item) > -1);
 
 
 
