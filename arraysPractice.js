@@ -73,8 +73,14 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
 
 
   //Code Here
-
-
+var oddFinder = arr => arr.filter(item => item %2 !== 0);
+var divider = arr => {
+  return [
+    evenFinder(arr),
+    oddFinder(arr)
+  ]
+}
+divider(numbersArray);
 //Next Problem
 
 
